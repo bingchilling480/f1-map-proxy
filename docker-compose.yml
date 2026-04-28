@@ -1,0 +1,7 @@
+services:
+  f1-map-proxy:
+    build: .
+    container_name: f1-map-proxy
+    restart: unless-stopped
+    ports:
+      - "4464:8080"
